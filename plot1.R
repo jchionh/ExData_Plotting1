@@ -12,3 +12,6 @@ dataTable$DateTime <- strptime(paste(dataTable$Date, dataTable$Time, sep=" "), "
 png("plot1.png", width=480, height=480)
 # draw the histogram
 hist(dataTable$Global_active_power, col="red", main="Global Active Power", xlab="Global Active Power (kilowatts)")
+# off the device
+dev.off()
+
